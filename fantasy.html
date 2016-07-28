@@ -53,9 +53,9 @@ p {
 }
 </style>
 <script>
-  function display() {
-    var nothing = document.getElementById("something");
-    nothing.innerHTML = "Hello";
+  function lengthsummary(title) {
+    var summary = document.getElementById("title");
+    summary.innerHTML = "Hello";
 }
 </script>
 </head>
@@ -80,8 +80,8 @@ p {
   <div class="col-lg-5">
     <p class="title">The Demon King</p>
     <center><img src="http://www.cindachima.com/Demon_King/DK_cover_md.jpg" width="324" height="500"></center>
-    <p id="something">One day Han Alister catches three young wizard setting fire to the sacred mountain of Hanalea. Han takes an amulet away from Micah Bayar, son of the High Wizard, to ensure the boy won't use it against him. The amulet once belonged to the Demon King, who nearly destroyed the world a millennium ago. With a magical piece so powerful at stake, Han knows that the Bayars will stop at nothing to get it back.<br>Meanwhile, Princess Raisa ana'Marianna has her own battle to fight. She's just returned to court after three years of riding and hunting with her father's family. Raia aspires to be like Hanalea, the legendary warrior queen who killed the Demon King and saved the world. But it seems that her mother has other plans for her-plans that include a suitor who goes against everything the Queendom stands for.<br>The Seven Realms will tremble when the lives of Han and Raisa collide in this stunning page-turner from best-selling author Cinda Williams Chima.<br>"From Amazon"</p>
-    <button onclick="display()">Click me</button>
+    <p id="thedemonking">One day Han Alister catches three young wizard setting fire to the sacred mountain of Hanalea. Han takes an amulet away from Micah Bayar, son of the High Wizard, to ensure the boy won't use it against him. The amulet once belonged to the Demon King, who nearly destroyed the world a millennium ago. With a magical piece so powerful at stake, Han knows that the Bayars will stop at nothing to get it back.<br>Meanwhile, Princess Raisa ana'Marianna has her own battle to fight. She's just returned to court after three years of riding and hunting with her father's family. Raia aspires to be like Hanalea, the legendary warrior queen who killed the Demon King and saved the world. But it seems that her mother has other plans for her-plans that include a suitor who goes against everything the Queendom stands for.<br>The Seven Realms will tremble when the lives of Han and Raisa collide in this stunning page-turner from best-selling author Cinda Williams Chima.<br>"From Amazon"</p>
+    <button onclick="display(thedemonking)">Click me</button>
   </div>
   <div class="col-lg-5">
     <p class="title">The Golden Compass/The Northern Lights</p>
@@ -95,7 +95,8 @@ p {
   <div class="col-lg-5">
     <p class="title">Eragon</p>
     <center><img src="http://shurtugal.com/wp-content/uploads/2013/08/10thAnniversaryCover.jpg" width="324" height="500"></center>
-    <p>One boy. One dragon. A world of adventure.<br>When Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy; perhaps it will buy his family meat for the winter. But when the stone brings a dragon hatchling, Eragon realizes he has stumbled upon a legacy nearly as old as the Empire itself.<br>Overnight his simple life is shattered, and he is thrust into a perilous new world of destiny, magic, and power. With only an ancient sword and the advice of an old storyteller for guidance, Eragon and the fledgling dragon must navigate the dangerous terrain and dark enemies of an Empire ruled by a king whose evil knows no bounds.<br>Can Eragon take up the mantle of the legendary Dragon Riders? The fate of the Empire may rest in his hands.<br>"From Goodreads"</p>
+    <p id="eragon">One boy. One dragon. A world of adventure.<br>When Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy; perhaps it will buy his family meat for the winter. But when the stone brings a dragon hatchling, Eragon realizes he has stumbled upon a legacy nearly as old as the Empire itself.<br>Overnight his simple life is shattered, and he is thrust into a perilous new world of destiny, magic, and power. With only an ancient sword and the advice of an old storyteller for guidance, Eragon and the fledgling dragon must navigate the dangerous terrain and dark enemies of an Empire ruled by a king whose evil knows no bounds.<br>Can Eragon take up the mantle of the legendary Dragon Riders? The fate of the Empire may rest in his hands.<br>"From Goodreads"</p>
+    <button onclick="display(eragon)">Click me</button>
   </div>
   <div class="col-lg-5"><p class="title">Historical Fiction</p></div>
   <div class="col-lg-1"></div>
