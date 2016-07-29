@@ -62,18 +62,15 @@ p {
 function thedemonking() {
   var length=document.getElementById(1)
   var short=document.getElementById(2)
-  if (length.style.display="none"){
+  if (length.style.display="none" && short.style.display="inline"){
     length.style.display="inline";
+    short.style.display="none";
   }
   else {
     length.style.display="none";
-  }
-  if (short.style.display="none"){
     short.style.display="inline";
   }
-  else {
-    short.style.display="none";
-  }
+
 }
 
 
