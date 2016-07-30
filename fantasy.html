@@ -9,8 +9,8 @@
 body {
  border-left: groove 10px #ffffcc;
  border-right: groove 10px #ffffcc;
- margin-left: 15%;
- margin-right: 15%;
+ width: 2000px;
+ margin: auto;
 }
 #navbar {
   background-color: black;
@@ -23,6 +23,12 @@ body {
   padding-left: 20px;
   line-height: 1.5em;
   font-size: 1.5em;
+}
+#maincontent {
+  margin-bottom: 20px;
+}
+.row {
+  
 }
 h1 {
   line-height:1.5em;
@@ -96,7 +102,7 @@ function summarylength(title) {
 <h1>Book Recommendations</h1>
 <h2>Fantasy</h2>
 
- 
+<div id="maincontent">
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
@@ -127,7 +133,7 @@ function summarylength(title) {
   <div class="col-lg-5"><p class="title">Historical Fiction</p></div>
   <div class="col-lg-1"></div>
 </div>
-
+</div>
 
 </body>
 
