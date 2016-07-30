@@ -7,42 +7,56 @@
 </head>
 <style>
 body {
- border-left: groove 10px #ffffcc;
- border-right: groove 10px #ffffcc;
+ padding-left: 25px;
+ padding-right: 25px;
+ border-left: solid 10px #006400;
+ border-right: solid 10px #006400;
  margin-left: 15%;
  margin-right: 15%;
+ max-width: 1500px;
+ min-width: 750px;
 }
 #navbar {
-  background-color: black;
   text-align: center;
-  border: red solid 1px;
+  background-color: #ffe4e1;
 }
 .navlink {
-  color: green;
-  padding-right: 20px;
-  padding-left: 20px;
-  line-height: 1.5em;
-  font-size: 1.5em;
+  padding-right: 30px;
+  padding-left: 30px;
+  line-height: 2em;
+  font-size: 1.75em;
+}
+#maincontent {
+  padding-bottom: 50px;
+}
+.row {
+  padding-bottom: 20px;
+}
+#lastrow {
+  border-bottom: solid 1px #006400;
 }
 h1 {
   line-height:1.5em;
   height: 1.5em;
+  font-size: 3em;
   text-align: center;
-  color: black;
-  border: solid 3px black;
+  color: #006400;
+  border: solid 3px #ffe4e1;
   margin-left: 15%;
   margin-right: 20%;
 }
 h2 {
-  margin-top: 50px;
-  font-size: 2.25em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #006400;
 }
 .title {
-  color: white;
-  background-color: black;
-  height: 1.25em;
-  line-height: 1.25em;
-  font-size: 1.25em;
+  color: #006400;
+  background-color: #ffe4e1;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 1.5em;
   margin: 2px;
   text-align: center;
 }
@@ -50,6 +64,18 @@ p {
   line-height: 1em;
   font-size: 1em;
   font-family: "Arial";
+  color: #006400;
+}
+a:link, a:visited {
+  background-color: #ffe4e1;
+  color: #006400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  color: #ffe4e1;
+  background-color: #006400;
 }
 </style>
 </head>
@@ -86,7 +112,7 @@ Author James Church weaves a story with beautifully spare prose and layered desc
   </div>
   <div class="col-lg-1"></div>
 </div>
-<div class="row">
+<div id="lastrow" class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
     <p class="title">The Girl With The Dragon Tattoo</p>
