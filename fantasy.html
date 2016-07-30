@@ -18,7 +18,7 @@ body {
   border: red solid 1px;
 }
 .navlink {
-  color: green;
+  color: white;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 1.5em;
@@ -62,22 +62,27 @@ p {
 
 function summarylength(title) {
   if (title==1) {
-     var length=document.getElementById(1)
+     var long=document.getElementById(1)
      var short=document.getElementById(2)
+     var buttonname=document.getElementById(button1)
   } else if (title==2) {
-     var length=document.getElementById(3)
+     var long=document.getElementById(3)
      var short=document.getElementById(4)
+     var buttonname=document.getElementById(button2)
   } else if (title==3) {
-     var length=document.getElementById(5)
+     var long=document.getElementById(5)
      var short=document.getElementById(6)
+     var buttonname=document.getElementById(button3)
   }
-  if (length.style.display=="none" && short.style.display=="inline"){
-    length.style.display="inline";
+  if (long.style.display=="none" && short.style.display=="inline"){
+    long.style.display="inline";
     short.style.display="none";
+    buttonname.innerHTML="less";
   }
   else {
-    length.style.display="none";
+    long.style.display="none";
     short.style.display="inline";
+    buttonname.innerHTML="more";
   }
 }
 
@@ -113,14 +118,14 @@ function summarylength(title) {
     <br><br>The Seven Realms will tremble when the lives of Han and Raisa collide in this stunning page-turner from best-selling author Cinda Williams Chima.<br>"From Amazon"</p>
     <p id="2" style="display: inline;">One day Han Alister catches three young wizard setting fire to the sacred mountain of Hanalea. Han takes an amulet away from Micah Bayar, son of the High Wizard, to ensure the boy won't use it against him. The amulet once belonged to the Demon King, who nearly destroyed the world a millennium ago. With a magical piece so powerful at stake, Han knows that the Bayars will stop at nothing to get it back.
     <br><br>Meanwhile, Princess Raisa ana'Marianna has her own battle...<br>"From Amazon"</p>
-    <button onclick="summarylength(1)">Click me</button>
+    <button id="button1" onclick="summarylength(1)">more</button>
   </div>
   <div class="col-lg-5">
     <p class="title">The Golden Compass/The Northern Lights</p>
     <center><img src="http://ecx.images-amazon.com/images/I/91ucIYlekNL._SL1500_.jpg" width="324" height="500"></center>
     <p id="3" style="display: none;">Here lives an orphaned ward named Lyra Belacqua, whose carefree life among the scholars at Oxford's Jordan College is shattered by the arrival of two powerful visitors. First, her fearsome uncle, Lord Asriel, appears with evidence of mystery and danger in the far North, including photographs of a mysterious celestial phenomenon called Dust and the dim outline of a city suspended in the Aurora Borealis that he suspects is part of an alternate universe. He leaves Lyra in the care of Mrs. Coulter, an enigmatic scholar and explorer who offers to give Lyra the attention her uncle has long refused her. In this multilayered narrative, however, nothing is as it seems. Lyra sets out for the top of the world in search of her kidnapped playmate, Roger, bearing a rare truth-telling instrument, the alethiometer. All around her children are disappearing—victims of so-called "Gobblers"—and being used as subjects in terrible experiments that separate humans from their daemons, creatures that reflect each person's inner being. And somehow, both Lord Asriel and Mrs. Coulter are involved.<br>"From Goodreads"</p>
     <p id="4" style="display: inline;">Here lives an orphaned ward named Lyra Belacqua, whose carefree life among the scholars at Oxford's Jordan College is shattered by the arrival of two powerful visitors. First, her fearsome uncle, Lord Asriel, appears with evidence of mystery and danger in the far North, including photographs of a mysterious celestial phenomenon called Dust and the dim outline of a city suspended in the Aurora Borealis that he suspects is part of an alternate universe...<br>"From Goodreads"</p>
-    <button onclick="summarylength(2)">Click me</button>
+    <button id="button2" onclick="summarylength(2)">more</button>
   </div>
   <div class="col-lg-1"></div>
 </div>
@@ -131,7 +136,7 @@ function summarylength(title) {
     <center><img src="http://shurtugal.com/wp-content/uploads/2013/08/10thAnniversaryCover.jpg" width="324" height="500"></center>
     <p id="5" style="display: none;">One boy. One dragon. A world of adventure.<br>When Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy; perhaps it will buy his family meat for the winter. But when the stone brings a dragon hatchling, Eragon realizes he has stumbled upon a legacy nearly as old as the Empire itself.<br>Overnight his simple life is shattered, and he is thrust into a perilous new world of destiny, magic, and power. With only an ancient sword and the advice of an old storyteller for guidance, Eragon and the fledgling dragon must navigate the dangerous terrain and dark enemies of an Empire ruled by a king whose evil knows no bounds.<br>Can Eragon take up the mantle of the legendary Dragon Riders? The fate of the Empire may rest in his hands.<br>"From Goodreads"</p>
     <p id="6" style="display: inline;">One boy. One dragon. A world of adventure.<br>When Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy; perhaps it will buy his family meat for the winter. But when the stone brings a dragon hatchling, Eragon realizes he has stumbled upon a legacy nearly as old as the Empire itself.<br>Overnight his simple life is shattered, and he is thrust into a perilous new world of destiny, magic, and power…<br>"From Goodreads"</p>
-    <button onclick="summarylength(3)">Click me</button>
+    <button id="button3" onclick="summarylength(3)">more</button>
   </div>
   <div class="col-lg-5"><p class="title">Historical Fiction</p></div>
   <div class="col-lg-1"></div>
