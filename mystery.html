@@ -33,7 +33,7 @@ body {
 h1 {
   line-height:1.5em;
   height: 1.5em;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   color: #006400;
   border: solid 3px #ffe4e1;
@@ -41,18 +41,18 @@ h1 {
   margin-right: 20%;
 }
 h2 {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 2.5em;
+  font-size: 1.75em;
   color: #006400;
 }
 .title {
   color: #006400;
   background-color: #ffe4e1;
-  height: 1.5em;
-  line-height: 1.5em;
-  font-size: 1.5em;
-  margin: 2px;
+  height: 1.25em;
+  line-height: 1.25em;
+  font-size: 1.25em;
+  margin: 0px;
   text-align: center;
 }
 p {
@@ -73,6 +73,37 @@ a:hover, a:active {
   background-color: #006400;
 }
 </style>
+
+<script>
+function summarylength(title) {
+  if (title==1) {
+     var long=document.getElementById(1)
+     var short=document.getElementById(2)
+     var buttonname=document.getElementById("button1")
+  } else if (title==2) {
+     var long=document.getElementById(3)
+     var short=document.getElementById(4)
+     var buttonname=document.getElementById("button2")
+  } else if (title==3) {
+     var long=document.getElementById(5)
+     var short=document.getElementById(6)
+     var buttonname=document.getElementById("button3")
+  } else if (title==3) {
+     var long=document.getElementById(7)
+     var short=document.getElementById(8)
+     var buttonname=document.getElementById("button4")
+  if (long.style.display=="none" && short.style.display=="inline"){
+    long.style.display="inline";
+    short.style.display="none";
+    buttonname.innerHTML="less";
+  }
+  else {
+    long.style.display="none";
+    short.style.display="inline";
+    buttonname.innerHTML="more";
+  }
+}
+</script>
 </head>
 
 
@@ -96,14 +127,24 @@ a:hover, a:active {
   <div class="col-lg-5">
     <p class="title">Sherlock Holmes</p>
     <center><img src="https://www.penguin.com.au/jpg-large/9780141040288.jpg" width="324" height="500"></center>
-    <p>Since his first appearance in 1887, Sir Arthur Conan Doyle's Sherlock Holmes has been one of the most beloved fictional characters ever created. Along with his trusty companion John Watson, Holmes investigates each mystery presented to him with the class and ingenuity for which he is known. This volume of stories includes Holmes's feats of extraordinary detection in such famous cases as the chilling "The Speckled Band," the baffling riddle of "The Dancing Men," and the ingeniously plotted "The Red-Headed League." All are tales that bring to life a Victorian England of horse-drawn cabs, fogs, and the famous lodgings at 221B Baker Street, where Sherlock Holmes earned his undisputed reputation as the greatest fictional detective of all time.<br>"From Goodreads"</p>
+    <p id="1" style="display: none;">Since his first appearance in 1887, Sir Arthur Conan Doyle's Sherlock Holmes has been one of the most beloved fictional characters ever created. Along with his trusty companion John Watson, Holmes investigates each mystery presented to him with the class and ingenuity for which he is known. This volume of stories includes Holmes's feats of extraordinary detection in such famous cases as the chilling "The Speckled Band," the baffling riddle of "The Dancing Men," and the ingeniously plotted "The Red-Headed League." All are tales that bring to life a Victorian England of horse-drawn cabs, fogs, and the famous lodgings at 221B Baker Street, where Sherlock Holmes earned his undisputed reputation as the greatest fictional detective of all time.
+      <br><br>"From Goodreads"</p>
+    <p id="2" style="display: inline;">Since his first appearance in 1887, Sir Arthur Conan Doyle's Sherlock Holmes has been one of the most beloved fictional characters ever created. Along with his trusty companion John Watson, Holmes investigates each mystery presented to him with the class and ingenuity for which he is known...
+      <br><br>"From Goodreads"</p>
+    <button id="button1" onclick="summarylength(1)">more</button>
   </div>
   <div class="col-lg-5">
     <p class="title">A Corpse In The Koryo</p>
     <center><img src="http://d.gr-assets.com/books/1441380182l/15307.jpg" width="324" height="500"></center>
-    <p>Sit on a quiet hillside at dawn among the wildflowers; take a picture of a car coming up a deserted highway from the south. 
-Simple orders for Inspector O, until he realizes they have led him far, far off his department's turf and into a maelstrom of betrayal and death. North Korea's leaders are desperate to hunt down and eliminate anyone who knows too much about a series of decade's-old kidnappings and murders---and Inspector O discovers too late he has been sent into the chaos. This is a world where nothing works as it should, where the crimes of the past haunt the present, and where even the shadows are real. 
-Author James Church weaves a story with beautifully spare prose and layered descriptions of a country and a people he knows by heart after decades as an intelligence officer.<br>"From Amazon"</p>
+    <p id="3" style="display: none;">Against the backdrop of a totalitarian North Korea, one man unwillingly uncovers the truth behind series of murders, and wagers his life in the process.
+      <br><br>Sit on a quiet hillside at dawn among the wildflowers; take a picture of a car coming up a deserted highway from the south. Simple orders for Inspector O, until he realizes they have led him far, far off his department’s turf and into a maelstrom of betrayal and death. North Korea’s leaders are desperate to hunt down and eliminate anyone who knows too much about a series of decades-old kidnappings and murders---and Inspector O discovers too late he has been sent into the chaos.
+      <br><br>This is a world where nothing works as it should, where the crimes of the past haunt the present, and where even the shadows are real. A corpse in Pyongyang’s main hotel---the Koryo---pulls Inspector O into a confrontation of bad choices between the devils he knows and those he doesn’t want to meet. A blue button on the floor of a hotel closet, an ice blue Finnish lake, and desperate efforts by the North Korean leadership set Inspector O on a journey to the edge of a reality he almost can’t survive.
+      <br><br>"From Amazon"</p>
+    <p id="4" style="display: inline;">Against the backdrop of a totalitarian North Korea, one man unwillingly uncovers the truth behind series of murders, and wagers his life in the process.
+      <br><br>Sit on a quiet hillside at dawn among the wildflowers; take a picture of a car coming up a deserted highway from the south. Simple orders for Inspector O, until he realizes they have led him far, far off his department’s turf and into a maelstrom of betrayal and death...
+      <br><br>"From Amazon"</p>
+    <button id="button2" onclick="summarylength(2)">more</button>
+  </p>
   </div>
   <div class="col-lg-1"></div>
 </div>
@@ -112,9 +153,21 @@ Author James Church weaves a story with beautifully spare prose and layered desc
   <div class="col-lg-5">
     <p class="title">The Girl With The Dragon Tattoo</p>
     <center><img src="http://65.media.tumblr.com/e16c5585ec482802dc98daa19e2481f9/tumblr_mxiaeitrOZ1sobxc7o1_1280.jpg" width="324" height="500"></center>
-    <p>Mikael Blomkvist, a once-respected financial journalist, watches his professional life rapidly crumble around him. Prospects appear bleak until an unexpected (and unsettling) offer to resurrect his name is extended by an old-school titan of Swedish industry. The catch—and there's always a catch—is that Blomkvist must first spend a year researching a mysterious disappearance that has remained unsolved for nearly four decades. With few other options, he accepts and enlists the help of investigator Lisbeth Salander, a misunderstood genius with a cache of authority issues. Little is as it seems in Larsson's novel, but there is at least one constant: you really don't want to mess with the girl with the dragon tattoo.<br>"From Goodreads"</p>
+    <p id="5" style="display: none;">Mikael Blomkvist, a once-respected financial journalist, watches his professional life rapidly crumble around him. Prospects appear bleak until an unexpected (and unsettling) offer to resurrect his name is extended by an old-school titan of Swedish industry. The catch—and there's always a catch—is that Blomkvist must first spend a year researching a mysterious disappearance that has remained unsolved for nearly four decades. With few other options, he accepts and enlists the help of investigator Lisbeth Salander, a misunderstood genius with a cache of authority issues. Little is as it seems in Larsson's novel, but there is at least one constant: you really don't want to mess with the girl with the dragon tattoo.
+      <br><br>"From Goodreads"</p>
+    <p id="6" style="display: inline">Mikael Blomkvist, a once-respected financial journalist, watches his professional life rapidly crumble around him. Prospects appear bleak until an unexpected (and unsettling) offer to resurrect his name is extended by an old-school titan of Swedish industry. The catch—and there's always a catch—is that Blomkvist must first spend a year researching a mysterious disappearance that has remained unsolved for nearly four decades...
+      <br><br>"From Goodreads"</p>
+    <button id="button3" onclick="summarylength(3)">more</button>
   </div>
-  <div class="col-lg-5"><p class="title">Historical Fiction</p></div>
+  <div class="col-lg-5">
+    <p class="title">Stormbreaker</p>
+    <center><img src="http://66.media.tumblr.com/tumblr_mdb4jgvFG61rsqsjko1_r1_1280.png" width="324" height="500"></center>
+    <p id="7" style="display: none;">They told him his uncle died in an accident. He wasn't wearing his seatbelt, they said. But when fourteen-year-old Alex finds his uncle's windshield riddled with bullet holes, he knows it was no accident. What he doesn't know yet is that his uncle was killed while on a top-secret mission. But he is about to, and once he does, there is no turning back. Finding himself in the middle of terrorists, Alex must outsmart the people who want him dead. The government has given him the technology, but only he can provide the courage. Should he fail, every child in England will be murdered in cold blood.
+      <br><br>"From Goodreads"</p>
+    <p id="8" style="display: inline;">They told him his uncle died in an accident. He wasn't wearing his seatbelt, they said. But when fourteen-year-old Alex finds his uncle's windshield riddled with bullet holes, he knows it was no accident. What he doesn't know yet is that his uncle was killed while on a top-secret mission. But he is about to, and once he does, there is no turning back...
+      <br><br>"From Goodreads"</p>
+    <button id="button4" onclick="summarylength(4)">more</button>
+  </div>
   <div class="col-lg-1"></div>
 </div>
 
