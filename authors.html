@@ -73,6 +73,20 @@ a:hover, a:active {
   background-color: #006400;
 }
 </style>
+<script>
+  
+var images = [
+  "http://vignette4.wikia.nocookie.net/harrypotter/images/3/3e/JKRowling.jpg/revision/latest?cb=20151001174249",
+  "http://www.ew.com/sites/default/files/1456779703/Marie%20Lu%202.JPG",
+  "https://media2.wnyc.org/i/1021/1500/c/80/1/carl_hiaasen_2.jpg",
+  ]
+  
+function slideshow() {
+  var image = document.getElementById("currentimage");
+  image.src = images[currentImageIndex];
+}
+  
+</script>
 </head>
 
 
@@ -113,6 +127,14 @@ a:hover, a:active {
     <p class="title">Historical Fiction</p>
   </div>
   <div class="col-lg-1"></div>
+</div>
+
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+    <center><img id="currentimage"></center>
+  </div>
+  <div class="col-lg-3"></div>
 </div>
 
 
