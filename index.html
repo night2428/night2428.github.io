@@ -76,11 +76,52 @@ a:hover, a:active {
 }
 </style>
 <script>
+function summarylength() {
+  var long=document.getElementById(1);
+  var short=document.getElementById(2);
+  var buttonname=document.getElementById("button1");
   
-var bookofdayall = [
-  "Redwall", "Red Queen", "Eon", "Hotel On the Corner of Bitter and Sweet", "Inkheart", "A Wrinkle In Time", "Airborn"
-  ]
+  if (long.style.display=="none" && short.style.display=="inline"){
+    long.style.display="inline";
+    short.style.display="none";
+    buttonname.innerHTML="less";
+  }
+  else {
+    long.style.display="none";
+    short.style.display="inline";
+    buttonname.innerHTML="more";
+  }
+}
+
+var title = document.getElementById("bodtitle");
+var image = document.getElementById("bodimage");
+var summaryl = document.getElementById("1");
+var summarys = document.getElementById("2");
+
+switch (new date.getdate()) {
+  case 2:
+    title.innerHTML="Red Queen";
+    break;
+  default:
+    title.innerHTML="Airborn";
+}
   
+  
+  
+  
+  
+  
+  
+ bookofdayall = [
+  ["Redwall", 0],
+  ["Red Queen", 1],
+  ["Eon", 2],
+  ["Hotel On the Corner of Bitter and Sweet", 3],
+  ["Inkheart", 4],
+  ["A Wrinkle In Time", 5],
+  ["Airborn", 6]
+]
+var bookofdate = bookofdayall[]
   
   
 </script>
@@ -101,21 +142,16 @@ var bookofdayall = [
 <h2>Home</h2>
 
 
-  <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5"><p class="title"><a href="fantasy.html">Fantasy</a></p></div>
-    <div class="col-lg-5"><p class="title"><a href="mystery.html">Mystery</a></p></div>
-    <div class="col-lg-1"></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5"><p class="title"><a href="classics.html">Classics</a></p></div>
-    <div class="col-lg-5"><p class="title"><a href="historical.html">Historical Fiction</a></p></div>
-    <div class="col-lg-1"></div>
-  </div>
+
   <div class="row">
       <div class="col-lg-3"></div>
-      <div class="col-lg-6"><p class="title"><a href="authors.html">Authors</a></p></div>
+      <div class="col-lg-6">
+        <p id="bodtitle" class="title"></p>
+        <center><img id="bodimage"></center>
+        <p id="1" style="display: none;"></p>
+        <p id="2" style="display: inline;"></p>
+        <button id="button1" onclick="summarylength()">more</button>
+      </div>
       <div class="col-lg-3"></div>
   </div>
 
