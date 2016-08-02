@@ -73,6 +73,39 @@ a:hover, a:active {
   background-color: #006400;
 }
 </style>
+<script>
+  
+  function summarylength(title) {
+  if (title==1) {
+     var long=document.getElementById(1)
+     var short=document.getElementById(2)
+     var buttonname=document.getElementById("button1")
+  } else if (title==2) {
+     var long=document.getElementById(3)
+     var short=document.getElementById(4)
+     var buttonname=document.getElementById("button2")
+  } else if (title==3) {
+     var long=document.getElementById(5)
+     var short=document.getElementById(6)
+     var buttonname=document.getElementById("button3")
+  } else if (title==4) {
+     var long=document.getElementById(7)
+     var short=document.getElementById(8)
+     var buttonname=document.getElementById("button4")
+  }
+  if (long.style.display=="none" && short.style.display=="inline"){
+    long.style.display="inline";
+    short.style.display="none";
+    buttonname.innerHTML="less";
+  }
+  else {
+    long.style.display="none";
+    short.style.display="inline";
+    buttonname.innerHTML="more";
+  }
+}
+
+</script>
 </head>
 
 
@@ -98,7 +131,8 @@ a:hover, a:active {
   <p id="1" style="display: none;">A moving coming-of-age story set in the 1900s, A Tree Grows in Brooklyn follows the lives of 11-year-old Francie Nolan, her younger brother Neely, and their parents, Irish immigrants who have settled in the Williamsburg section of Brooklyn. Johnny Nolan is as loving and fanciful as they come, but he is also often drunk and out of work, unable to find his place in the land of opportunity. His wife Katie scrubs floors to put food on the table and clothes on her children's backs, instilling in them the values of being practical and planning ahead. When Johnny dies, leaving Katie pregnant, Francie, smart, pensive and hoping for something better, cannot believe that life can carry on as before. But with her own determination, and that of her mother behind her, Francie is able to move toward the future of her dreams, completing her education and heading off to college, always carrying the beloved Brooklyn of her childhood in her heart.
     <br><br>"From Amazon"</p>
   <p id="2" style="display: inline;">A moving coming-of-age story set in the 1900s, A Tree Grows in Brooklyn follows the lives of 11-year-old Francie Nolan, her younger brother Neely, and their parents, Irish immigrants who have settled in the Williamsburg section of Brooklyn...
-  <br><br>"From Amazon"</p>
+     <br><br>"From Amazon"</p>
+  <button id="button1" onclick="summarylength(1)">more</button>
   </div>
   <div class="col-lg-5">
     <p class="title">Little Women</p>
@@ -107,6 +141,7 @@ a:hover, a:active {
     <br><br>"From Goodreads"</p>
     <p id="4" style="display: inline;">In picturesque nineteenth-century New England, tomboyish Jo, beautiful Meg, fragile Beth, and romantic Amy are responsible for keeping a home while their father is off to war. At the same time, they must come to terms with their individual personalities—and make the transition from girlhood to womanhood...
       <br><br>"From Goodreads"</p>
+    <button id="button2" onclick="summarylength(2)">more</button>
   </div>
   <div class="col-lg-1"></div>
 </div>
@@ -115,12 +150,21 @@ a:hover, a:active {
   <div class="col-lg-5">
     <p class="title">The Call of The Wild</p>
     <center><img src="http://lovelace-media.imgix.net/uploads/431/0d2d5010-1f53-0132-08bb-0eae5eefacd9.jpg?" width="324" height="500"></center>
-    <p>Kidnapped form his safe California home. Thrown into a life-and-death struggle on the frozen Artic wilderness. Half St. Bernard, half shepard, Buck learns many hard lessons as a sled dog: the lesson of the leash, of the cold, of near-starvation and cruelty. And the greatest lesson he learns from his last owner, John Thornton: the power of love and loyalty.<br>Yet always, even at the side of the human he loves, Buck feels the pull in his bones, an urge to answer his wolf ancestors as they howl to him.<br>"From Amazon"</p>
+    <p id="5" style="display: none;">Kidnapped form his safe California home. Thrown into a life-and-death struggle on the frozen Artic wilderness. Half St. Bernard, half shepard, Buck learns many hard lessons as a sled dog: the lesson of the leash, of the cold, of near-starvation and cruelty. And the greatest lesson he learns from his last owner, John Thornton: the power of love and loyalty.<br>Yet always, even at the side of the human he loves, Buck feels the pull in his bones, an urge to answer his wolf ancestors as they howl to him.
+     <br><br>"From Amazon"</p>
+    <p id="6" style="display: inline;">Kidnapped form his safe California home. Thrown into a life-and-death struggle on the frozen Artic wilderness. Half St. Bernard, half shepard, Buck learns many hard lessons as a sled dog: the lesson of the leash, of the cold, of near-starvation and cruelty...
+     <br><br>"From Amazon"</p>
+    <button id="button3" onclick="summarylength(3)">more</button>
   </div>
   <div class="col-lg-5">
-  <p class="title">The Giver</p>
-  <center><img src="http://readerswonderland.com/wp-content/uploads/2015/01/the-giver-lois-lowry.jpg" width="324" height="500"></center>
-  <p class="summary">The Giver, the 1994 Newbery Medal winner, has become one of the most influential novels of our time. The haunting story centers on twelve-year-old Jonas, who lives in a seemingly ideal, if colorless, world of conformity and contentment. Not until he is given his life assignment as the Receiver of Memory does he begin to understand the dark, complex secrets behind his fragile community. Lois Lowry has written three companion novels to The Giver, including Gathering Blue, Messenger, and Son.<br>"From Goodreads."</p>
+    <p class="title">The Giver</p>
+    <center><img src="http://readerswonderland.com/wp-content/uploads/2015/01/the-giver-lois-lowry.jpg" width="324" height="500"></center>
+    <p id="7" style="display: none;">In a world with no poverty, no crime, no sickness and no unemployment, and where every family is happy, 12-year-old Jonas is chosen to be the community's Receiver of Memories. Under the tutelage of the Elders and an old man known as the Giver, he discovers the disturbing truth about his utopian world and struggles against the weight of its hypocrisy. 
+      <br><br>The Giver is set in a future society which is at first presented as a utopia and gradually appears more and more dystopic, so could therefore be considered anti-utopian. The novel follows a boy named Jonas through the twelfth year of his life. Jonas' society has eliminated pain and strife by converting to "Sameness", a plan which has also eradicated emotional depth from their lives. Jonas is selected to inherit the position of "Receiver of Memory," the person who stores all the memories of the time before Sameness, in case they are ever needed to aid in decisions that others lack the experience to make. As Jonas receives the memories from his predecessor—the "Giver"—he discovers how shallow his community's life has become.
+      <br><br>"From Goodreads"</p>
+    <p id="8" style="display: inline;">In a world with no poverty, no crime, no sickness and no unemployment, and where every family is happy, 12-year-old Jonas is chosen to be the community's Receiver of Memories. Under the tutelage of the Elders and an old man known as the Giver, he discovers the disturbing truth about his utopian world and struggles against the weight of its hypocrisy...
+      <br><br>"From Goodreads"</p>
+      <button id="button4" onclick="summarylength(4)">more</button>
   </div>
   <div class="col-lg-1"></div>
 </div>
