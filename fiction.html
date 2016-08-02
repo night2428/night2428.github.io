@@ -50,7 +50,6 @@ h2 {
 .title {
   color: #006400;
   background-color: #ffe4e1;
-  height: 1.25em;
   line-height: 1.25em;
   font-size: 1.25em;
   margin-bottom: 10px;
@@ -72,6 +71,10 @@ a:link, a:visited {
 a:hover, a:active {
   color: #ffe4e1;
   background-color: #006400;
+}
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 </style>
 <script>
@@ -128,7 +131,10 @@ function summarylength(title) {
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <p class="title">The Book Thief</p>
+    <div class="title">
+      <p>The Book Thief</p>
+      <p class="author">by Markus Zusak</p>
+    </div>
     <center><img src="http://bookfrog.net/files/img/content/bookthief.jpg" width="324" height="500"></center>
     <div class="info">
       <p>Author: Markus Zusak</p>
@@ -143,7 +149,10 @@ function summarylength(title) {
     <button id="button1" onclick="summarylength(1)">more</button>
   </div>
 <div class="col-lg-5">
-  <p class="title">Where The Mountain Meets The Moon</p>
+  <div class="title"> 
+    <p>Where The Mountain Meets The Moon</p>
+    <p class="authors">by Grace Lin</p>
+  </div>
   <center><img src="http://www.hachettebookgroup.com/_b2c/media/cache/a3/1a/a31a4e0dc963a0a86c1ef697c324cf92.jpg" width="324" height="500"></center>
   <p id="3" style="display: none;">Grace Lin, author of the beloved Year of the Dog and Year of the Rat, returns with a wondrous story of happiness, family, and friendship. A fantasy crossed with Chinese folklore, Where the Mountain Meets the Moon is a timeless adventure story in the classic tradition of The Wizard of Oz.
   <br><br>In the Valley of Fruitless Mountain, a young girl named Minli spends her days working hard in the fields and her nights listening to her father spin fantastic tales about the Jade Dragon and the Old Man of the Moon. Minli’s mother, tired of their poor life, chides him for filling her head with nonsense. But Minli believes these enchanting stories and embarks on an extraordinary journey to find the Old Man of the Moon and ask him how her family can change their fortune. She encounters an assorted cast of characters and magical creatures along the way, including a dragon who accompanies her on her quest.
@@ -157,7 +166,10 @@ function summarylength(title) {
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <p class="title">Chains</p>
+    <div class="title">
+      <p>Chains</p>
+      <p class="author">by Laurie Halse Anderson</p>
+    </div>
     <center><img src="https://carriedalby.files.wordpress.com/2012/10/chains.jpg" width="324" height="500"></center>
     <p id="5" style="display: none;">If an entire nation could seek its freedom, why not a girl?<br>As the Revolutionary War begins, thirteen-year-old Isabel wages her own fight...for freedom. Promised freedom upon the death of their owner, she and her sister, Ruth, in a cruel twist of fate become the property of a malicious New York City couple, the Locktons, who have no sympathy for the American Revolution and even less for Ruth and Isabel. When Isabel meets Curzon, a slave with ties to the Patriots, he encourages her to spy on her owners, who know details of British plans for invasion. She is reluctant at first, but when the unthinkable happens to Ruth, Isabel realizes her loyalty is available to the bidder who can provide her with freedom.
     <br><br>From acclaimed author Laurie Halse Anderson comes this compelling, impeccably researched novel that shows the lengths we can go to cast off our chains, both physical and spiritual.
@@ -167,7 +179,9 @@ function summarylength(title) {
     <button id="button3" onclick="summarylength(3)">more</button>
   </div>
   <div class="col-lg-5">
-    <p class="title">Miss Peregrine’s Home for Peculiar Children</p>
+    <div class="title">
+      <p>Miss Peregrine’s Home for Peculiar Children</p>
+      <p class="authors">by Ransom Riggs</p>
     <center><img src="http://www.heytheresunshine.com/wp-content/uploads/2016/05/miss-peregrines-home-for-peculiar-children-ransom-riggs.jpg" width="324" height="500"></center>
     <p id="7" style="display: none;">A mysterious island. An abandoned orphanage. A strange collection of curious photographs.
       <br><br>It all waits to be discovered in Miss Peregrine's Home for Peculiar Children, an unforgettable novel that mixes fiction and photography in a thrilling reading experience. As our story opens, a horrific family tragedy sets sixteen-year-old Jacob journeying to a remote island off the coast of Wales, where he discovers the crumbling ruins of Miss Peregrine’s Home for Peculiar Children. As Jacob explores its bedrooms and hallways, it becomes clear that Miss Peregrine's children were more than just peculiar. They may have been dangerous. They may have been quarantined on a deserted island for good reason. And somehow—impossible though it seems—they may still be alive.
