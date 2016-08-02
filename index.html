@@ -106,25 +106,21 @@ function summarylength(title) {
   }
 }
 
-
-  switch (new Date().getDay()) {
-    case 2:
-      document.getElementById("bodtitle").innerHTML="Red Queen";
-      break;
-    default:
-      document.getElementById("bodtitle").innerHTML="Airborn";
-  }
-
-
- bookofdayall = [
-  ["Redwall", 0],
-  ["Red Queen", 1],
-  ["Eon", 2],
-  ["Hotel On the Corner of Bitter and Sweet", 3],
-  ["Inkheart", 4],
-  ["A Wrinkle In Time", 5],
-  ["Airborn", 6]
+var bookofdayall = [
+  ["Redwall"],
+  ["Red Queen"],
+  ["Eon"],
+  ["Hotel On the Corner of Bitter and Sweet"],
+  ["Inkheart"],
+  ["A Wrinkle In Time"],
+  ["Airborn"]
 ]
+var dayofweek = new Date().getDay()
+for (var i = 0; i < bookofdayall.length; i+1) {
+  
+}
+
+
 </script>
 </head>
 
