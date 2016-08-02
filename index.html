@@ -76,11 +76,24 @@ a:hover, a:active {
 }
 </style>
 <script>
-function summarylength() {
-  var long=document.getElementById(1);
-  var short=document.getElementById(2);
-  var buttonname=document.getElementById("button1");
-  
+function summarylength(title) {
+  if (title==1) {
+     var long=document.getElementById(1)
+     var short=document.getElementById(2)
+     var buttonname=document.getElementById("button1")
+  } else if (title==2) {
+     var long=document.getElementById(3)
+     var short=document.getElementById(4)
+     var buttonname=document.getElementById("button2")
+  } else if (title==3) {
+     var long=document.getElementById(5)
+     var short=document.getElementById(6)
+     var buttonname=document.getElementById("button3")
+  } else if (title==4) {
+     var long=document.getElementById(7)
+     var short=document.getElementById(8)
+     var buttonname=document.getElementById("button4")
+  }
   if (long.style.display=="none" && short.style.display=="inline"){
     long.style.display="inline";
     short.style.display="none";
@@ -150,7 +163,7 @@ switch (new date.getdate()) {
         <center><img id="bodimage"></center>
         <p id="1" style="display: none;">k</p>
         <p id="2" style="display: inline;">h</p>
-        <button id="button1" onclick="summarylength()">more</button>
+        <button id="button1" onclick="summarylength(1)">more</button>
       </div>
       <div class="col-lg-3"></div>
   </div>
