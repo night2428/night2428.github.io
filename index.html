@@ -116,8 +116,14 @@ var bookofdayall = [
   ["Airborn"]
 ]
 var dayofweek = new Date().getDay()
-for (var i = 0; i < bookofdayall.length; i+1) {
-  
+function bookofday() {
+  switch (dayofweek) {
+    case 2:
+      document.getElementById("bodtitle") = "Red Queen"
+      break;
+    default:
+      document.getElementById("bodtitle") = "Airborn";
+  }
 }
 
 
@@ -143,10 +149,10 @@ for (var i = 0; i < bookofdayall.length; i+1) {
   <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
-        <p id="bodtitle" class="title"></p>
+        <p id="bodtitle" class="title">Book Of the Day (click here)</p>
         <center><img id="bodimage"></center>
-        <p id="1" style="display: none;"></p>
-        <p id="2" style="display: inline;"></p>
+        <p id="1" style="display: none;">yyt</p>
+        <p id="2" style="display: inline;">ty</p>
         <button id="button1" onclick="summarylength(1)">more</button>
       </div>
       <div class="col-lg-3"></div>
