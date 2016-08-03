@@ -117,9 +117,11 @@ var bookofdayall = [
 ]
 var dayofweek = new Date().getDay()
 function bookofday() {
-    if (dayofweek==2) {
-      document.getElementById("bodtitle") = "Red Queen"
-} else{
+    switch(dayofweek) {
+      case 2:
+        document.getElementById("bodtitle").innerHTML = "Red Queen";
+        break;
+      default:
        document.getElementById("bodtitle") = "Airborn";
   }
 }
