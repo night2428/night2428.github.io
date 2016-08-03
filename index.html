@@ -107,37 +107,44 @@ function summarylength(title) {
 }
 
 var bookofdayall = [
-  ["rec", "Redwall"],
-  ["Red Queen"],
-  ["Eon"],
-  ["Hotel On the Corner of Bitter and Sweet"],
-  ["Inkheart"],
-  ["A Wrinkle In Time"],
-  ["Airborn"]
+  ["Redwall", "http://www.djedwardson.com/wp-content/uploads/2016/06/Redwall.jpg"],
+  ["Red Queen", "http://vignette2.wikia.nocookie.net/the-red-queen/images/6/6c/Red_Queen.jpg/revision/latest?cb=20140725181236"],
+  ["Eon", "http://www.alisongoodman.com.au/darkdaysclub.com/wp-content/gallery/eon-and-eona/eondfb1.jpg"],
+  ["Hotel On the Corner of Bitter and Sweet", "http://smithsonianapa.org/bookdragon/wp-content/uploads/sites/10/2009/04/Hotel-on-the-Corner-of-Bitter-and-Sweet.jpg"],
+  ["Inkheart", "https://www.chickenhousebooks.com/wp-content/uploads/2015/04/inkheart-Cornelia-Funke.jpg"],
+  ["A Wrinkle In Time", "https://bayrockbayrock.files.wordpress.com/2015/07/australian-cover.jpg"],
+  ["Airborn", "http://4.bp.blogspot.com/-kxawqQ7DYoc/T2dLe7n4eVI/AAAAAAAAAPA/igfYHLr2JsM/s1600/Airborn+cover.jpg"]
 ]
 var dayofweek = new Date().getDay()
 function bookofday() {
     switch(dayofweek) {
       case 0:
-        document.getElementById("bodtitle").innerHTML = "Red Queen";
+        document.getElementById("bodtitle").innerHTML = bookofdayall[0][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[0][1];
         break;
       case 1:
-       document.getElementById("bodtitle").innerHTML = "Airborn";
+       document.getElementById("bodtitle").innerHTML = bookofdayall[1][0];
+       document.getElementById("bodimage").innerHTML = bookofdayall[1][1];
        break;
       case 2:
-        document.getElementById("bodtitle").innerHTML = "Airborn";
+        document.getElementById("bodtitle").innerHTML = bookofdayall[2][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[2][1];
         break;
       case 3:
-        document.getElementById("bodtitle").innerHTML = bookofdayall[0][1];
+        document.getElementById("bodtitle").innerHTML = bookofdayall[3][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[3][1];
         break;
       case 4:
-        document.getElementById("bodtitle").innerHTML = "Airborn";
+        document.getElementById("bodtitle").innerHTML = bookofdayall[4][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[4][1];
         break;
       case 5:
-        document.getElementById("bodtitle").innerHTML = "Airborn";
+        document.getElementById("bodtitle").innerHTML = bookofdayall[5][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[5][1];
         break;
       case 6:
-        document.getElementById("bodtitle").innerHTML = "Airborn";
+        document.getElementById("bodtitle").innerHTML = bookofdayall[6][0];
+        document.getElementById("bodimage").innerHTML = bookofdayall[6][1];
         break;
   }
 }
@@ -166,7 +173,7 @@ function bookofday() {
       <div class="col-lg-3"></div>
       <div class="col-lg-6">
         <p id="bodtitle" class="title" onclick="bookofday()">Book Of the Day (click here)</p>
-        <center><img id="bodimage"></center>
+        <center><img id="bodimage" width="324" height="500"></center>
         <p id="1" style="display: none;">yyt</p>
         <p id="2" style="display: inline;">fdsy</p>
         <button id="button1" onclick="summarylength(1)">more</button>
