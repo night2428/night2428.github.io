@@ -107,7 +107,7 @@ function summarylength(title) {
 }
 
 var bookofdayall = [
-  ["Redwall"],
+  ["rec", "Redwall"],
   ["Red Queen"],
   ["Eon"],
   ["Hotel On the Corner of Bitter and Sweet"],
@@ -118,11 +118,27 @@ var bookofdayall = [
 var dayofweek = new Date().getDay()
 function bookofday() {
     switch(dayofweek) {
-      case 2:
+      case 0:
         document.getElementById("bodtitle").innerHTML = "Red Queen";
         break;
-      default:
-       document.getElementById("bodtitle") = "Airborn";
+      case 1:
+       document.getElementById("bodtitle").innerHTML = "Airborn";
+       break;
+      case 2:
+        document.getElementById("bodtitle").innerHTML = "Airborn";
+        break;
+      case 3:
+        document.getElementById("bodtitle").innerHTML = bookofdayall[0][1];
+        break;
+      case 4:
+        document.getElementById("bodtitle").innerHTML = "Airborn";
+        break;
+      case 5:
+        document.getElementById("bodtitle").innerHTML = "Airborn";
+        break;
+      case 6:
+        document.getElementById("bodtitle").innerHTML = "Airborn";
+        break;
   }
 }
 
