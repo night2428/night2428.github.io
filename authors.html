@@ -74,18 +74,24 @@ a:hover, a:active {
 }
 </style>
 <script>
-  
+
+var currentImageIndex = 0;
 var images = [
   "http://vignette4.wikia.nocookie.net/harrypotter/images/3/3e/JKRowling.jpg/revision/latest?cb=20151001174249",
   "http://www.ew.com/sites/default/files/1456779703/Marie%20Lu%202.JPG",
   "https://media2.wnyc.org/i/1021/1500/c/80/1/carl_hiaasen_2.jpg",
-  ]
+  ];
   
 function slideshow() {
   var image = document.getElementById("currentimage");
   image.src = images[currentImageIndex];
+  currentImageIndex = currentImageIndex + 1;
+  if(currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  }
 }
-  
+
+setInterval(updateImage, 10000);
 </script>
 </head>
 
