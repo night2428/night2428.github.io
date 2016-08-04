@@ -46,23 +46,23 @@ h2 {
   font-size: 1.75em;
   color: #006400;
 }
-.title {
-  color: #006400;
-  background-color: #ffe4e1;
-  height: 1.25em;
-  line-height: 1.25em;
-  font-size: 1.25em;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.author {
-  font-size: 1em;
-}
 p {
   line-height: 1em;
   font-size: 1em;
   font-family: "Arial";
   color: #006400;
+}
+.heading {
+  color: #006400;
+  background-color: #ffe4e1;
+  line-height: 1.25em;
+  text-align: center;
+}
+.author {
+  font-size: 1em;
+}
+.title{
+  font-size: 1.25em;
 }
 a:link, a:visited {
   background-color: #ffe4e1;
@@ -133,8 +133,8 @@ function summarylength(title) {
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-    <div class="title"> 
-      <p>The Demon King</p>
+    <div class="heading"> 
+      <p class="title">The Demon King</p>
       <p class="author">by Cinda Williams Chima</p>
     </div>
     <center><img src="http://www.cindachima.com/Demon_King/DK_cover_md.jpg" width="324" height="500"></center>
@@ -148,8 +148,8 @@ function summarylength(title) {
     <button id="button1" onclick="summarylength(1)">more</button>
   </div>
   <div class="col-lg-5">
-    <div class="title">
-      <pThe Golden Compass/The Northern Lights</p>
+    <div class="heading">
+      <p class="title">The Golden Compass/The Northern Lights</p>
       <p class="author">by Phillip Pullman</p>
     </div>
     <center><img src="http://ecx.images-amazon.com/images/I/91ucIYlekNL._SL1500_.jpg" width="324" height="500"></center>
@@ -164,8 +164,8 @@ function summarylength(title) {
 <div class="row">
   <div class="col-lg-1"></div>
   <div class="col-lg-5">
-  <div class="title">
-    <p>Eragon</p>
+  <div class="heading">
+    <p class="title">Eragon</p>
     <p class="author">by Christopher Poalini</p>
   </div>
     <center><img src="http://shurtugal.com/wp-content/uploads/2013/08/10thAnniversaryCover.jpg" width="324" height="500"></center>
@@ -178,7 +178,7 @@ function summarylength(title) {
     <button id="button3" onclick="summarylength(3)">more</button>
   </div>
   <div class="col-lg-5">
-    <div class="title">
+    <div class="Heading">
       <p class="title">Graceling</p>
       <p class="author">Kristin Cashore</p>
     </div>
