@@ -82,13 +82,12 @@ var images = [
   "https://media2.wnyc.org/i/1021/1500/c/80/1/carl_hiaasen_2.jpg",
   ];
   
-function slideshow() {
-  var images = document.getElementById("currentimage");
-  image.src = images[currentImageIndex];
+function updateImage() {
+	var image = document.getElementById("currentimage");
+	image.src = images[currentImageIndex];
   currentImageIndex = currentImageIndex + 1;
-  if(currentImageIndex >= images.length) {
-    currentImageIndex = 0;
-  }
+  if(currentImageIndex >= images.length)
+  currentImageIndex = 0;
 }
 
 setInterval(updateImage, 10000);
@@ -130,7 +129,7 @@ setInterval(updateImage, 10000);
     <center><img src="https://media2.wnyc.org/i/1021/1500/c/80/1/carl_hiaasen_2.jpg" width="324" height="500"></center>
   </div>
   <div class="col-lg-5">
-    <p class="title">Historical Fiction</p>
+    <p class="title">Brandon Sanderson</p>
   </div>
   <div class="col-lg-1"></div>
 </div>
