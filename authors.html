@@ -83,7 +83,7 @@ var images = [
   ];
   
 function slideshow() {
-  var image = document.getElementById("currentimage");
+  var images = document.getElementById("currentimage");
   image.src = images[currentImageIndex];
   currentImageIndex = currentImageIndex + 1;
   if(currentImageIndex >= images.length) {
